@@ -1,0 +1,26 @@
+<div class="form-container">
+    <form [formGroup]="myForm" class="justify-content-center">
+        <h2>Value</h2>
+        <pre>{{myForm.value | json}}</pre>
+        <hr>
+
+        <mat-form-field appearance="outline" class="m-2">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="m-2">
+            <mat-label>Mesagge</mat-label>
+            <textarea matInput formControlName="mesagge"></textarea>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="m-2">
+            <mat-label>Career</mat-label>
+            <mat-select formControlName="career">
+                <mat-option>Software Engineering</mat-option>
+                <mat-option>Data Science</mat-option>
+                <mat-option>Web Development</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </form>
+</div>
